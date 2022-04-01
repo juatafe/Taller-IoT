@@ -16,4 +16,4 @@ Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
 * Router WiFi (El própio teléfono móvil)
 ## Raspbian
 ### Descargar e instalar ISO 
-A la [página oficial de Raspberry encontramos la ISO](https://www.raspberrypi.com/software/raspberry-pi-desktop/)  en concreto de la versión [Debian 10 Buster con el kernel 4.19](https://downloads.raspberrypi.org/rpd_x86/images/) que es con la que se ha preparado este taller. 
+A la [página oficial de Raspberry encontramos la ISO](https://www.raspberrypi.com/software/raspberry-pi-desktop/)  en concreto de la versión [Debian 10 Buster con el kernel 4.19](https://downloads.raspberrypi.org/rpd_x86/images/) que es con la que se ha preparado este taller. Para ello se prepara una máquina virtual en Virtual Box con Extension Pack del tipo Debian 64 bits. La instalación se realiza en modo gráfico y usando toda la partición dinámica de 25GB. 
