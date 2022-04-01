@@ -91,4 +91,10 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
 
 ![vcgencmd](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/vcgencmd.png)
 
+* Para que el contenido sea válido se requiere cortar el mensaje con el dato de temperatura. Para ello se requiere del módulo function.
+
+![function]()
+
+![function2]()
+
 
