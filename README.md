@@ -108,11 +108,58 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
  
  ![Home](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Home.png)
  
+ # Configurar NodeMCU
+ ## Instalar IDE de Arduino
+ * Se descarga mediante el comando ``` wget https://downloads.arduino.cc/arduino-1.8.19-linux32.tar.xz ```
+ * Se descomprime y se instala mediante los siguientes comandos:
+ ```
+tar -xvf arduino-1.8.19-linux32.tar.xz
+cd arduino-1.8.19
+sudo bash arduino-linux-setup.sh root
+sudo su
+bash install.sh
+exit
+sudo usermod -a -G dialout pi
+echo "SUBSYSTEM==\"usb\", MODE=\"0660\", GROUP=\"$(id -gn)\"" | sudo tee /etc/udev/rules.d/00-usb-permissions.rules udevadm control--reload-rules
+reboot
+
+ ```
+ ### Para evitar problemas en detectar el dispositivo NodeMCU
+ --- 
+ * En caso de que el anfitrión sea Windows se requiere de instalar el driver. Los siguientes enlaces puden resultar de utilidad para ello:
+   [CH341SER_Windows](https://github.com/nodemcu/nodemcu-devkit/blob/master/Drivers/CH341SER_WINDOWS.zip
+) y [CH340-Drivers-tutorial] (https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
+)
+* En el caso de Linux se requiere el abconnector. Para la versión i386 se obtienen con el comando ```wget http://www.arduinoblocks.com/web/site/abconnectordownload/2 ``` y se instalan con el comando ```sudo dpkg -i abconnector_4_x86.deb ```
+* Para arrancar se requiere /opt/abconnector/abconnector se arranca una vez y ya no se necesita. Recomienda reiniciar Raspbian.
+--- 
+## Abrir el IDE de Arduino
+![Arduino]()
+* Poner la librería ESP8266 en el Ide de arduino en File--->Preferences
+![Preferences]()
+[https://arduino.esp8266.com/stable/package_esp8266com_index.json](https://arduino.esp8266.com/stable/package_esp8266com_index.json
+)
+
+![Preferences-link]()
+
+* Entrando en Tools-->Board-->Board Manager
+
+![toolsBoard]()
+
+* Se busca e instala la placa ESP8266
+
+![esp8266]()
+
+* Se selecciona la placa NodeMCU 1.0 (ESP-12E Module)
+
+![ESp-12E]()
+
+
  ## Segundo Ejercicio 
 ### Hacer que el LED del NodeMCU parpadee
 Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el NodeMCU correctamente y todo está preparado para realizar el ejercicio final. 
 * Con el NodeMCU conectado por USB al PC y a la máquina virtual Raspbian arrancar el IDE de Arduino y abrir un ejemplo en File-->Examples-->ESP8266-->Blink
 * Mediante el icono Upload se carga el firmware en el NodeMCU. El led incorporado debería parpadear tras la descarga del programa.
 
-![blink]()
+![blink](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/blink.jpg)
 
