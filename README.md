@@ -154,6 +154,19 @@ reboot
 
 ![ESp-12E](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/ESP-12E.png)
 
+* Se introduce el micro-USB en la placa NoceMCU y el USB al puerto del PC, con ello se conecta la placa NodeMCU al PC anfitrión.
+
+![conectaNode]()
+
+*  Para conectar la placa NodeMCU a la máquina virtual se selecciona Devices-->USB-->QinHeng ELectronics USB serial.
+
+![qingen]()
+
+* Tras la conexión se requiere seleccionar el puerto en Tools -->Ports.
+
+![port]()
+
+
 
  ## Segundo Ejercicio 
 ### Hacer que el LED del NodeMCU parpadee
