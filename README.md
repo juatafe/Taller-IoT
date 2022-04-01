@@ -88,4 +88,4 @@ sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
 echo “temp=60.7'C”
 ```
 
-
+![vcgencmd](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/vcgencmd.png)
