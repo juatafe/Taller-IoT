@@ -194,6 +194,6 @@ Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el Nod
 ```scp Taller-IoT.ino pi@IP-DE-LA-RASPBIAN:/home/pi/Arduino/Taller-IoT/Taller-IoT.ino```
 * Mediante el IDE de Arduino se carga en la tarjeta NodeMCU 
 * Mediante el navegador del PC anfitrión se accede al Dashboard con el socket IP-DE-LA-RASPBIAN:1880/ui
-![Dashboard]()
+![Dashboard](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/tableroLED.png)
 
 
