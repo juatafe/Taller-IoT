@@ -107,3 +107,12 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
  * Para acceder al Dashboard creado y ver el gauge se requiere acceder al socket IP-DE-LA-RASPBIAN:1880/ui
  
  ![Home](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Home.png)
+ 
+ ## Segundo Ejercicio 
+### Hacer que el LED del NodeMCU parpadee
+Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el NodeMCU correctamente y todo está preparado para realizar el ejercicio final. 
+* Con el NodeMCU conectado por USB al PC y a la máquina virtual Raspbian arrancar el IDE de Arduino y abrir un ejemplo en File-->Examples-->ESP8266-->Blink
+* Mediante el icono Upload se carga el firmware en el NodeMCU. El led incorporado debería parpadear tras la descarga del programa.
+
+![blink]()
+
