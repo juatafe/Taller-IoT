@@ -65,12 +65,17 @@ npm install node-red
 sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
 ```
 * En el PC anfitrión se abre el navegador y se introduce el socket formado con la IP-DE-LA-RASPBIAN:1880 que permite ver el panel de control de Node-RED
+
 ![Wellcome to Node-RED 2.2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/wellcomeNodeRed.png)
 
 ## Primer Ejercicio 
 ### Obtener temperatura de la CPU y mostrarla en un panel de control
-* En el apartado common se encuentra el módulo inject. Con doble clik se abre la pestaña de propiedades y se seleccionan los siguientes parámetros:
+* En el apartado common se encuentra el módulo inject. Este módulo permite introducir una especie de reloj que con el que ocurren los sucesos. Con doble clik se abre la pestaña de propiedades y se seleccionan los siguientes parámetros:
  * Inject once after 1 second
  * Repeat interval
  * every 1 minutes
+ 
+![inject]()
 
+* En el aparatado function se encuentra el módulo exec
+![exec]()
