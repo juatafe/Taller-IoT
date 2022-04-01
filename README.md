@@ -14,3 +14,6 @@ Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
 * Tarjeta WiFi o USB WiFi. Para este caso USB EDIMAX EW-7811Un V2
 * PC con un mínimo 4G de RAM i puertos USB-2.0
 * Router WiFi (El própio teléfono móvil)
+## Raspbian
+### Descargar e instalar ISO 
+A la [página oficial de Raspberry encontramos la ISO](https://www.raspberrypi.com/software/raspberry-pi-desktop/)  en concreto de la versión [Debian 10 Buster con el kernel 4.19](https://downloads.raspberrypi.org/rpd_x86/images/) que es con la que se ha preparado este taller. 
