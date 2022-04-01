@@ -181,3 +181,6 @@ Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el Nod
 * Para el envio de mensajes entre el NodeRED y el NodeMCU se requiere un Broker MQTT(Mosca) que se instala con el menú Manage palette o con el comando ```npm install node-red-contrib-mqtt-broker```
 * El escenario consiste en el gestor de mensajes, un interruptor y una salida de mensajería MQTT. Como puede verse en la siguiente imagen el módulo Aedes MQTT broker(gestor de mensajes) está conectado a dos módulos debugers para mostrar por terminal mensajes de depuración. El resto són el módulo del panel dashboard switch y el módulo del panel network mqtt out. 
 ![flow2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/flow2.png)
+
+* La configuración de los módulos resulta bastante intuitiva y se omite. El switch se configura de forma que se envia un string On Payload "off" y "on" Off Payload. El tópic, que es la cabecera del mensaje que se envía se establece en room/lamp simulando que es la luz de una habitación. 
+![LED](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/LED.png)
