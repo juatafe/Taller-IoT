@@ -75,7 +75,11 @@ sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
  * Repeat interval
  * every 1 minutes
  
-![inject]()
+![inject](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/inject.png)
 
-* En el aparatado function se encuentra el módulo exec
-![exec]()
+* En el aparatado function se encuentra el módulo exec donde permite introducir comandos.
+
+![exec](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/exec.png)
+
+* Para emular que se trabaja con una Raspberry Pi real se utiliza el mismo comando que permite medir la temperaura de la CPU. ```vcgencmd measure_temp```
+. Dado que en la Raspberry Pi real se requiere de su instalación (aquí se puede encontrar cómo) y en la virtual no existe versión para i386 se procede a crear un scrip con el mismo nombre del comando que no recibe parámetros y que devuelve un valor de temperatura. 
