@@ -2,7 +2,7 @@
 Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
 -
 ![Setup ](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/TallerIoT.png)
- Con este taller se pretende que el alumnado sea capaz de preparar un entorno de desarrollo simulando una Raspberry Pi conectada a un hardware real como el NodeMCU mediante una red WiFi. Mediante Node-Red se programa de forma visual los diferentes módulos que permiten la comunicación. Mediante el IDE de Arduino se carga en la tarjeta NodeMCU un programa capaz de comunicarse con la Raspbian. 
+ Con este taller se pretende que el alumnado sea capaz de preparar un entorno de desarrollo simulando una Raspberry Pi conectada a un hardware real como el NodeMCU mediante una red WiFi. Mediante Node-RED se programa de forma visual los diferentes módulos que permiten la comunicación. Mediante el IDE de Arduino se carga en la tarjeta NodeMCU un programa capaz de comunicarse con la Raspbian. 
  En primer lugar se prepara el entorno tanto en la Raspbian como en la tarjeta NodeMCU. Se realizan dos ejecercicios sencillos por separado y finalmente se implementa la comunicación entre ambos. 
  
 ## Material necesario
@@ -29,7 +29,7 @@ Tras esta acción aparecerá montado el CD. Se procede a lanzar el script de ins
 ```
 bash media/cdrom0/VBoxLinuxAdditions.run
 ```
-### Instalación de Node-Red
+### Instalación de Node-RED
 Aquí surge la problemática que estamos en un entorno virtual para i386. Raspberry pi lleva ARMs y los paquetes disponibles para Debian Buster de nodejs no pasan de la versión 10.24. El procedimiento pasa por tratar de engañar al instalador para que instale una versión superior. Para ello se requieren una serie de dependencias. Como aptitude gestiona mejor las dependencias que apt se procede a su instalación con el comando:
 ```
 sudo apt install aptitude
@@ -60,11 +60,17 @@ sudo apt-get  install -y nodejs
 ```
 npm install node-red
 ```
-* Ahora es posible arrancar Node-red mediante el comando:
+* Ahora es posible arrancar Node-RED mediante el comando:
 ```
 sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
 ```
-* En el PC anfitrión se abre el navegador y se introduce la IP-DE-LA-RASPBIAN:1880 
+* En el PC anfitrión se abre el navegador y se introduce el socket formado con la IP-DE-LA-RASPBIAN:1880 que permite ver el panel de control de Node-RED
 ![Wellcome to Node-RED 2.2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/wellcomeNodeRed.png)
 
+## Primer Ejercicio 
+### Obtener temperatura de la CPU y mostrarla en un panel de control
+* En el apartado common se encuentra el módulo inject. Con doble clik se abre la pestaña de propiedades y se seleccionan los siguientes parámetros:
+ * Inject once after 1 second
+ * Repeat interval
+ * every 1 minutes
 
