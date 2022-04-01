@@ -22,6 +22,6 @@ Tras la instalación se actualiza mediante los comandos:
 sudo apt update && sudo apt full-upgrade
 ```
 Más adelante se requiere de conectividad con el puerto USB así que se instala Guest Additions. Se debe insertar el CD mediante el menú Devices--> Insert Guest Additions CD image
-![Devices--> Insert Guest Additions CD image]()
+![Devices--> Insert Guest Additions CD image](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/InsertGuestAdditionsCDImage.png)
 
 ### 
