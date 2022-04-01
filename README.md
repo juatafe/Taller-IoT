@@ -98,12 +98,12 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
 * Para representar el dato se require del módulo gauge contenido en el paquete node-red-dashboard. Para instalarlo es posible mediante comandos con ```npm install node-red-dashboard```  o mediante Node-RED en el menú Manage palette(alt+mays+p)-->Install . Se recomienda este último que no requiere reiniciar Node-RED.
 * Con el módulo gauge en el tablero se modifican sus propiedades. Se requiere un tab, se requiere un group (desmarca Display group name) y selecciona Add. Finalmente se configura el gauge node con una temperatura de 0 a 120 y sectores de 40 y 80 grados. 
  
- ![gauge]()
+ ![gauge](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/gauge.png)
  
  * Se conectan las salidas con las entradas como en la siguiente figura:
- ![Flow1]()
+ ![Flow1](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Flow1.png)
  
  * Mediante Deploy se guarda el tablero(Flow) y empieza la acción. 
  * Para acceder al Dashboard creado y ver el gauge se requiere acceder al socket IP-DE-LA-RASPBIAN:1880/ui
  
- ![Home]()
+ ![Home](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Home.png)
