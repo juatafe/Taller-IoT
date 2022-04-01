@@ -176,3 +176,8 @@ Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el Nod
 
 ![blink](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/blink.jpg)
 
+## Tercer Ejercicio
+### Encender el LED de la Placa NodeMCU con Node-RED en Raspbian
+* Para el envio de mensajes entre el NodeRED y el NodeMCU se requiere un Broker MQTT(Mosca) que se instala con el menú Manage palette o con el comando ```npm install node-red-contrib-mqtt-broker```
+* El escenario consiste en el gestor de mensajes, un interruptor y una salida de mensajería MQTT. Como puede verse en la siguiente imagen el módulo Aedes MQTT broker(gestor de mensajes) está conectado a dos módulos debugers para mostrar por terminal mensajes de depuración. El resto són el módulo del panel dashboard switch y el módulo del panel network mqtt out. 
+![flow2]()
