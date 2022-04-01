@@ -189,8 +189,8 @@ Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el Nod
 * En el IDE de Arduino se requiere de la librería pubsubclient y se procede a su instalación.
 ![pubsubclient](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/pubsubclient.png)
 
-* Este ejercicio requiere de una conexión WiFi entre el PC anfritión y el NodeMCU. Se introduce el USB WiFi Edimax en el PC Anfritión y se conecta a una red WiFi (puede ser la de un teléfono móbil o la del aula). Se reinicia Rasbian(con adaptador puente) y se arranca Node-Red. Una vez en la red WiFi se observa la IP-DE-LA-RASPBIAN y se introduce junto con el SSID y el password de la red WiFi al fichero Taller-IoT.ino
-* El fichero Taller-IoT.ino se envía a la Raspbian mediante el comando:
+* Este ejercicio requiere de una conexión WiFi entre el PC anfritión y el NodeMCU. Se introduce el USB WiFi Edimax en el PC Anfritión y se conecta a una red WiFi (puede ser la de un teléfono móbil o la del aula). Se reinicia Rasbian(con adaptador puente) y se arranca Node-Red. Una vez en la red WiFi se observa la IP-DE-LA-RASPBIAN y se introduce junto con el SSID y el password de la red WiFi al fichero [Taller-IoT.ino](https://github.com/juatafe/Taller-IoT/blob/main/Taller-IoT.ino)
+* El fichero [Taller-IoT.ino](https://github.com/juatafe/Taller-IoT/blob/main/Taller-IoT.ino) se envía a la Raspbian mediante el comando:
 ```scp Taller-IoT.ino pi@IP-DE-LA-RASPBIAN:/home/pi/Arduino/Taller-IoT/Taller-IoT.ino```
 * Mediante el IDE de Arduino se carga en la tarjeta NodeMCU 
 * Mediante el navegador del PC anfitrión se accede al Dashboard con el socket IP-DE-LA-RASPBIAN:1880/ui
