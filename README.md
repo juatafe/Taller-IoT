@@ -101,6 +101,7 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
  ![gauge](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/gauge.png)
  
  * Se conectan las salidas con las entradas como en la siguiente figura:
+ 
  ![Flow1](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Flow1.png)
  
  * Mediante Deploy se guarda el tablero(Flow) y empieza la acción. 
@@ -134,9 +135,10 @@ reboot
 * Para arrancar se requiere /opt/abconnector/abconnector se arranca una vez y ya no se necesita. Recomienda reiniciar Raspbian.
 --- 
 ## Abrir el IDE de Arduino
+
 ![Arduino](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Arduino.png)
 * Poner la librería ESP8266 en el Ide de arduino en File--->Preferences
-![Preferences]()
+![Preferences](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Preferences.png)
 [https://arduino.esp8266.com/stable/package_esp8266com_index.json](https://arduino.esp8266.com/stable/package_esp8266com_index.json
 )
 
