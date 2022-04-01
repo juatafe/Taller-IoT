@@ -11,3 +11,5 @@ Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
 * Placa NodeMCU Lolin v3 ESP8288 12E v0.9
 * Cable micro-USB a USB-A
 * Tarjeta WiFi o USB WiFi. Para este caso USB EDIMAX EW-7811Un V2
+* PC con un mínimo 4G de RAM i puertos USB-2.0
+* Router WiFi (El própio teléfono móvil)
