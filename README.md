@@ -182,5 +182,18 @@ Este ejerccio pone de manifiesto que se tiene la posibilidad de programar el Nod
 * El escenario consiste en el gestor de mensajes, un interruptor y una salida de mensajería MQTT. Como puede verse en la siguiente imagen el módulo Aedes MQTT broker(gestor de mensajes) está conectado a dos módulos debugers para mostrar por terminal mensajes de depuración. El resto són el módulo del panel dashboard switch y el módulo del panel network mqtt out. 
 ![flow2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/flow2.png)
 
-* La configuración de los módulos resulta bastante intuitiva y se omite. El switch se configura de forma que se envia un string On Payload "off" y "on" Off Payload. El tópic, que es la cabecera del mensaje que se envía se establece en room/lamp simulando que es la luz de una habitación. 
+* La configuración de los módulos resulta bastante intuitiva y se omite.El server es localhost y el puerto se deja por defecto el 1883.  El switch se configura de forma que se envia un string On Payload "off" y "on" Off Payload. El tópic, que es la cabecera del mensaje que se envía, se establece en room/lamp simulando que es la luz de una habitación. 
+
 ![LED](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/LED.png)
+
+* En el IDE de Arduino se requiere de la librería pubsubclient y se procede a su instalación.
+![pubsubclient](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/pubsubclient.png)
+
+* Este ejercicio requiere de una conexión WiFi entre el PC anfritión y el NodeMCU. Se introduce el USB WiFi Edimax en el PC Anfritión y se conecta a una red WiFi (puede ser la de un teléfono móbil o la del aula). Se reinicia Rasbian(con adaptador puente) y se arranca Node-Red. Una vez en la red WiFi se observa la IP-DE-LA-RASPBIAN y se introduce junto con el SSID y el password de la red WiFi al fichero Taller-IoT.ino
+* El fichero Taller-IoT.ino se envía a la Raspbian mediante el comando:
+```scp Taller-IoT.ino pi@IP-DE-LA-RASPBIAN:/home/pi/Arduino/Taller-IoT/Taller-IoT.ino```
+* Mediante el IDE de Arduino se carga en la tarjeta NodeMCU 
+* Mediante el navegador del PC anfitrión se accede al Dashboard con el socket IP-DE-LA-RASPBIAN:1880/ui
+![Dashboard]()
+
+
