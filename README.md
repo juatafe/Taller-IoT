@@ -87,5 +87,8 @@ sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
 #!/bin/bash
 echo “temp=60.7'C”
 ```
+Así es posible configurar el módulo de igual forma que ser haría con el hardware real. 
 
 ![vcgencmd](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/vcgencmd.png)
+
+
