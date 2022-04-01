@@ -16,7 +16,7 @@ Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
 * Router WiFi (El própio teléfono móvil)
 ## Raspbian
 ### Descargar e instalar ISO 
-A la [página oficial de Raspberry encontramos la ISO](https://www.raspberrypi.com/software/raspberry-pi-desktop/)  en concreto de la versión [Debian 10 Buster con el kernel 4.19](https://downloads.raspberrypi.org/rpd_x86/images/) que es con la que se ha preparado este taller. Para ello se prepara una máquina virtual en Virtual Box con Extension Pack del tipo Debian 64 bits. La instalación se realiza en modo gráfico y usando toda la partición dinámica de 25GB.
+En la [página oficial de Raspberry encontramos la ISO](https://www.raspberrypi.com/software/raspberry-pi-desktop/)  en concreto de la versión [Debian 10 Buster con el kernel 4.19](https://downloads.raspberrypi.org/rpd_x86/images/) que es con la que se ha preparado este taller. Para ello se prepara una máquina virtual en Virtual Box con Extension Pack del tipo Debian 64 bits. La instalación se realiza en modo gráfico y usando toda la partición dinámica de 25GB.
 Tras la instalación se actualiza mediante los comandos:
 ```
 sudo apt update && sudo apt full-upgrade
@@ -25,8 +25,28 @@ Más adelante se requiere de conectividad con el puerto USB así que se instala 
 
 ![Devices--> Insert Guest Additions CD image](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/InsertGuestAdditionsCDImage.png)
 
-Tras esta acció aparecerá montado el CD. Se procede a lanzae el script de instalación mediante el comando:
+Tras esta acción aparecerá montado el CD. Se procede a lanzar el script de instalación mediante el comando:
 ```
 bash media/cdrom0/VBoxLinuxAdditions.run
 ```
-### 
+### Instalación de Node-Red
+Aquí surge la problemática que estamos en un entorno virtual para i386. Raspberry pi lleva ARMs y los paquetes disponibles para Debian Buster de nodejs no pasan de la versión 10.24. El procedimiento pasa por tratar de engañar al instalador para que instale una versión superior. Para ello se requieren una serie de dependencias. Como aptitude gestiona mejor las dependencias que apt se procede a su instalación con el comando:
+```
+sudo apt install aptitude
+```
+* Se instala con aptitude las siguientes dependencias:
+```
+sudo aptitude install libc6:amd64
+sudo aptitude install libgcc1:amd64
+sudo aptitude install libstdc++6:amd64
+```
+* Para la siguiente y última dependencia se requiere una de las soluciones que presenta aptitude que instale la dependencia a pesar que desinstala muchos paquetes de python3. A priori para este taller no se requieren por tanto se procede con la opción numérica que instale el paquete "r XX" donde XX corresponde a dicha opción. 
+```
+sudo aptitude install python3-minimal:amd64
+```
+* Una vez instaladas la dependencias se procede a comentar todos los repositorios del fichero /etc/apt/sources.list
+* Se realiza un update con ``` sudo apt update ```
+* Se procede a descargar un scrip que permite añadir la fuente para la instalación de nodejs con el siguiente comando:
+```
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
+```
