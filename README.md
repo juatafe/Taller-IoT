@@ -134,25 +134,25 @@ reboot
 * Para arrancar se requiere /opt/abconnector/abconnector se arranca una vez y ya no se necesita. Recomienda reiniciar Raspbian.
 --- 
 ## Abrir el IDE de Arduino
-![Arduino]()
+![Arduino](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Arduino.png)
 * Poner la librería ESP8266 en el Ide de arduino en File--->Preferences
 ![Preferences]()
 [https://arduino.esp8266.com/stable/package_esp8266com_index.json](https://arduino.esp8266.com/stable/package_esp8266com_index.json
 )
 
-![Preferences-link]()
+![Preferences-link](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/Preferences-link.png)
 
 * Entrando en Tools-->Board-->Board Manager
 
-![toolsBoard]()
+![toolsBoard](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/ToolsBoard.png)
 
 * Se busca e instala la placa ESP8266
 
-![esp8266]()
+![esp8266](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/esp8266.png)
 
 * Se selecciona la placa NodeMCU 1.0 (ESP-12E Module)
 
-![ESp-12E]()
+![ESp-12E](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/ESP-12E.png)
 
 
  ## Segundo Ejercicio 
