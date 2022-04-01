@@ -156,15 +156,15 @@ reboot
 
 * Se introduce el micro-USB en la placa NoceMCU y el USB al puerto del PC, con ello se conecta la placa NodeMCU al PC anfitrión.
 
-![conectaNode]()
+![conectaNode](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/conectaNode.jpg)
 
 *  Para conectar la placa NodeMCU a la máquina virtual se selecciona Devices-->USB-->QinHeng ELectronics USB serial.
 
-![qingen]()
+![qingen](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/qingen.jpg)
 
 * Tras la conexión se requiere seleccionar el puerto en Tools -->Ports.
 
-![port]()
+![port](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/port.jpg)
 
 
 
