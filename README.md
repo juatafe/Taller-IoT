@@ -93,8 +93,6 @@ Así es posible configurar el módulo de igual forma que ser haría con el hardw
 
 * Para que el contenido sea válido se requiere cortar el mensaje con el dato de temperatura. Para ello se requiere del módulo function.
 
-![function]()
-
-![function2]()
+![function](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/function.png) ![function2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/function2.png)
 
 
