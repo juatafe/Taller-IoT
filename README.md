@@ -60,3 +60,8 @@ sudo apt-get  install -y nodejs
 ```
 npm install node-red
 ```
+* Ahora es posible arrancar Node-red mediante el comando:
+```
+sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
+```
+
