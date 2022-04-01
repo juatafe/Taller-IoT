@@ -50,3 +50,13 @@ sudo aptitude install python3-minimal:amd64
 ```
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo bash -
 ```
+* Se procede a instalar nodejs mediante el comando:
+```
+sudo apt-get  install -y nodejs
+```
+* En este punto se debe comprobar las versiones de nodejs y nmp mediante ``` node -v ``` y ``` npm -v ``` que para este taller se han instalado v16.14.2 y 8.5.0 respectivamente. 
+* Se procede a descomentar el fichero /etc/apt/sources.list y se ejecuta el comando ``` sudo apt update```
+* Se instala Node-red mediante el comando:
+```
+npm install node-red
+```
