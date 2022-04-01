@@ -64,4 +64,7 @@ npm install node-red
 ```
 sudo node ~/node_modules/node-red/red.js --max-old-space-size=256
 ```
+* En el PC anfitrión se abre el navegador y se introduce la IP-DE-LA-RASPBIAN:1880 
+![Wellcome to Node-RED 2.2](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/wellcomeNodeRed.png)
+
 
