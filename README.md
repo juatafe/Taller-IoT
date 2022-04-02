@@ -1,5 +1,5 @@
 # Taller-IoT 
-Introducción a IoT con un simulador Rasbian y una placa NodeMCU Lolin V3
+Introducción a IoT con un simulador Raspbian y una placa NodeMCU Lolin V3
 -
 ![Setup ](https://github.com/juatafe/Taller-IoT/blob/main/imagenes/TallerIoT.png)
  Con este taller se pretende que el alumnado sea capaz de preparar un entorno de desarrollo simulando una Raspberry Pi conectada a un hardware real como el NodeMCU mediante una red WiFi. Mediante Node-RED se programa de forma visual los diferentes módulos que permiten la comunicación. Mediante el IDE de Arduino se carga en la tarjeta NodeMCU un programa capaz de comunicarse con la Raspbian. 
