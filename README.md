@@ -27,7 +27,7 @@ Más adelante se requiere de conectividad con el puerto USB así que se instala 
 
 Tras esta acción aparecerá montado el CD. Se procede a lanzar el script de instalación mediante el comando:
 ```
-bash media/cdrom0/VBoxLinuxAdditions.run
+sudo bash /media/cdrom0/VBoxLinuxAdditions.run
 ```
 ### Instalación de Node-RED
 Aquí surge la problemática que estamos en un entorno virtual para i386. Raspberry pi lleva ARMs y los paquetes disponibles para Debian Buster de nodejs no pasan de la versión 10.24. El procedimiento pasa por tratar de engañar al instalador para que instale una versión superior. Para ello se requieren una serie de dependencias. Como aptitude gestiona mejor las dependencias que apt se procede a su instalación con el comando:
