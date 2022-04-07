@@ -131,7 +131,7 @@ reboot
    [CH341SER_Windows](https://github.com/nodemcu/nodemcu-devkit/blob/master/Drivers/CH341SER_WINDOWS.zip
 ) y [CH340-Drivers-tutorial] (https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
 )
-* En el caso de Linux se requiere el abconnector. Para la versión i386 se obtienen con el comando ```wget http://www.arduinoblocks.com/web/site/abconnectordownload/2 ``` y se instalan con el comando ```sudo dpkg -i abconnector_4_x86.deb ```
+* En el caso de Linux se requiere el abconnector. Para la versión i386 se obtienen con el comando ```curl http://www.arduinoblocks.com/web/site/abconnectordownload/2>abconnector_4_x86.deb ``` y se instalan con el comando ```sudo dpkg -i abconnector_4_x86.deb ```
 * Para arrancar se requiere /opt/abconnector/abconnector se arranca una vez y ya no se necesita. Recomienda reiniciar Raspbian.
 --- 
 ## Abrir el IDE de Arduino
